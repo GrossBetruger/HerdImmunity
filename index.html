@@ -10,6 +10,7 @@
         text-decoration: none;
         display: inline-block;
         font-size: 32px;
+        font-family: "Monospace";
         margin: 4px 2px;
         cursor: pointer;
       }
@@ -26,16 +27,18 @@
       console.log("chances:", chances);
       console.log(random < chances);
       if (random < chances) {
-          document.getElementById("result").innerHTML = "infected!";
+          var faith = new String("infected!");
+          document.getElementById("result").innerHTML = faith.fontcolor("red");
         }
       else {
-          document.getElementById("result").innerHTML = "alive and well";
+          var faith = new String("alive and well");
+          document.getElementById("result").innerHTML = faith.fontcolor("green");
        }
      }
   </script>
 
 
-    <p id="result" style="color:blue;font-size:80px;">
+    <p id="result" style="color:blue;font-size:80px;font-family:Monospace;">
        choose country
     </p>
 
