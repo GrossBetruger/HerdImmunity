@@ -1,0 +1,34 @@
+<html>
+  <header>
+  </header>
+
+  <body>
+  <script>
+     function test(immune) {
+      var chances = 1 - immune;
+      console.log('boo!');
+      var random = Math.random( );	
+      console.log(random);
+      if (random > chances) {
+          document.getElementById("result").innerHTML = "infected!";
+        }
+      else {
+          document.getElementById("result").innerHTML = "alive and well";
+       }
+     }
+  </script>
+
+    <p id="result">
+       choose country
+    </p>
+    <button class="favorite styled"
+        type="button"
+        onclick="test(0.2)"
+      >
+
+       Argentina 
+    </button>
+
+  </body>
+
+</html>
