@@ -8,8 +8,10 @@
       var chances = 1 - immune;
       console.log('boo!');
       var random = Math.random( );	
-      console.log(random);
-      if (random > chances) {
+      console.log("random:", random);
+      console.log("chances:", chances);
+      console.log(random < chances);
+      if (random < chances) {
           document.getElementById("result").innerHTML = "infected!";
         }
       else {
@@ -18,16 +20,88 @@
      }
   </script>
 
+
     <p id="result">
        choose country
     </p>
+
     <button class="favorite styled"
         type="button"
-        onclick="test(0.2)"
+        onclick="test(0.78)"
       >
-
-       Argentina 
+       Niger 
     </button>
+
+    <button class="favorite styled"
+        type="button"
+        onclick="test(0.78)"
+      >
+       Niger 
+    </button>
+
+    <button class="favorite styled"
+        type="button"
+        onclick="test(0.37)"
+      >
+       Chad 
+    </button>
+
+    <button class="favorite styled"
+        type="button"
+        onclick="test(0.9)"
+      >
+       Sudan 
+    </button>
+
+    <button class="favorite styled"
+        type="button"
+        onclick="test(0.94)"
+      >
+       Libya 
+    </button>
+
+    <button class="favorite styled"
+        type="button"
+        onclick="test(0.8)"
+      >
+       Kongo 
+    </button>
+
+    <button class="favorite styled"
+        type="button"
+        onclick="test(0.6)"
+      >
+       South Africa 
+    </button>
+
+    <button class="favorite styled"
+        type="button"
+        onclick="test(0.86)"
+      >
+       Ukraine 
+    </button>
+
+    <button class="favorite styled"
+        type="button"
+        onclick="test(0.88)"
+      >
+       Algeria 
+    </button>
+
+    <button class="favorite styled"
+        type="button"
+        onclick="test(0.42)"
+      >
+       Nigeria 
+    </button>
+
+    <button class="favorite styled"
+        type="button"
+        onclick="test(0.78)"
+      >
+       Niger 
+    </button>
+
 
   </body>
 
